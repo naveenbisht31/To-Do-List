@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <title>Daily Goals</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Style+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1 class="title">Daily <span>Goals</span></h1>
+
+        <div class="app-container">
+            <h2 class="subtitle"><span class="daydate"></span> <img src="/images/Sun.svg" alt="sun"></h2>
+
+            <p class="progress-label">Raise the bar by completing your goals!</p>
+
+            <div class="progress-bar">
+                <div class="progress-value">
+                    <span>0/3 Completed</span>
+                </div>
+
+                <p class="error-label">Please set & complete all the 3 goals!</p>
+            </div>
+
+            <div class="goal-container">
+                <div class="custom-checkbox">
+                    <img class="check-icon" src="images/check-icon.svg" alt="check-icon">
+                </div>
+
+                <input class="goal-input" id="first" type="text" placeholder="Add new goal...">
+            </div>
+
+            <div class="goal-container">
+                <div class="custom-checkbox">
+                    <img class="check-icon" src="images/check-icon.svg" alt="check-icon">
+                </div>
+
+                <input class="goal-input" id="second" type="text" placeholder="Add new goal...">
+            </div>
+
+            <div class="goal-container">
+                <div class="custom-checkbox">
+                    <img class="check-icon" src="images/check-icon.svg" alt="check-icon">
+                </div>
+
+                <input class="goal-input" id="third" type="text" placeholder="Add new goal...">
+            </div>
+
+            <p class="quote">"Move one step ahead, today!"</p>
+
+            <button class="clear" onclick="Clear()">Clear All</button>
+
+            <p class="credit"><span class="year"></span> Daily Goals | 📝🚀</p>
+        </div>
+    </main>
+</body>
+
+</html>
